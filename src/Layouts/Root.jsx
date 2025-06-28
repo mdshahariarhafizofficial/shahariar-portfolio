@@ -5,13 +5,15 @@ import Navbar from '../Components/Navbar/Navbar';
 const Root = () => {
     return (
         <>
-          <header>
-            <Navbar></Navbar>
+          <header className='px-5 lg:px-0'>
+            <nav>
+              <Navbar></Navbar>
+            </nav>
           </header>
-          <main>
+          <main className='px-5 lg:px-0'>
             <Outlet></Outlet>  
           </main>
-          <footer>
+          <footer className='px-5 lg:px-0'>
 
           </footer>
         </>

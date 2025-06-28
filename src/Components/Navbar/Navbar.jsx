@@ -45,7 +45,7 @@ return (
       ))}            
       </ul>
     </div>
-    <a className="text-primary text-3xl font-bold">Shahariar Hafiz</a>
+    <a className="text-primary text-3xl font-bold p-0">Shahariar Hafiz</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 flex gap-10">
