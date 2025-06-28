@@ -3,7 +3,7 @@ import person from '../../assets/person-img.png';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 
-export default function HeroSection() {
+export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-between px-0 py-16 bg-black text-white overflow-hidden relative">
       <div className="max-w-[1320px] w-full mx-auto flex flex-col-reverse md:flex-row items-center justify-between z-10">
@@ -34,13 +34,13 @@ export default function HeroSection() {
 
           {/* Sub Text */}
           <p className="text-gray-300 text-lg leading-relaxed">
-            Hi, I'm <span className="text-teal-400 font-medium">Md. Shahariar Hafiz</span>, a dedicated and enthusiastic frontend developer. Although I am a <span className="text-teal-400 font-medium">fresher</span>, I’ve built <span className="text-teal-400 font-medium">12+ projects</span> using technologies like HTML, CSS, JavaScript, React, and some full-stack projects using the MERN stack. I am passionate about creating clean, responsive, and user-friendly web applications.
+            Hi, I'm <span className="text-teal-400 font-medium">Md. Shahariar Hafiz</span>, a dedicated and enthusiastic frontend developer. Although I am a <span className="text-teal-400 font-medium">fresher</span>, I’ve built <span className="text-teal-400 font-medium">15+ projects</span> using technologies like HTML, CSS, JavaScript, React, and some full-stack projects using the MERN stack. I am passionate about creating clean, responsive, and user-friendly web applications.
           </p>
 
           {/* Stats */}
           <div className="flex flex-wrap gap-8 justify-center md:justify-start mt-4">
             <div>
-              <p className="text-3xl font-bold">12+</p>
+              <p className="text-3xl font-bold">15+</p>
               <p className="text-gray-400 text-sm border-t border-gray-600 pt-1 mt-1">
                 Completed Projects
               </p>
