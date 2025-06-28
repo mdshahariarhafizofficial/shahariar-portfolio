@@ -3,6 +3,18 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #20938a;
+  --color-secondary: #9ca3af;
+}
+
 *{
     font-family: "Inter", sans-serif;
+}
+body button{
+    cursor: pointer;
 }
