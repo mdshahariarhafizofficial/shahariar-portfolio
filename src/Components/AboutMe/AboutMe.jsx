@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
-import { FaBirthdayCake, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaBirthdayCake, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaIdCard, FaCalendarAlt, FaPhone } from 'react-icons/fa';
 import { RiCodeSSlashLine } from 'react-icons/ri';
-import { MdOutlineDesignServices } from 'react-icons/md';
+import { MdLocationPin, MdOutlineDesignServices } from 'react-icons/md';
 import { TbProgress } from 'react-icons/tb';
 import { HiLightBulb } from 'react-icons/hi';
-
+import myPic from '../../assets/mypic.png'
+import { IoIosMailOpen, IoMdMail } from 'react-icons/io';
 const iconStyle = 'text-[#00f7ff] text-lg';
 const labelStyle = 'text-[14px] text-gray-400';
 const valueStyle = 'text-[14px] text-white';
@@ -13,7 +14,7 @@ const cardStyle = 'bg-[#111111] rounded-xl flex gap-4 items-start p-5 md:p-6';
 export default function AboutMe() {
   return (
     <section id="about" className="w-full bg-[#000] pt-[80px] pb-16 px-4 md:px-0">
-      <div className="max-w-[1320px] mx-auto flex flex-col gap-12">
+      <div className="max-w-[1320px] mx-auto flex flex-col gap-8">
         {/* Section Header */}
         <div className="text-center space-y-2">
           <h2 className="text-white text-[32px] md:text-[42px] font-bold leading-[1.2] tracking-tight">
@@ -30,16 +31,18 @@ export default function AboutMe() {
           viewport={{ once: true }}
           className="bg-[#111111] px-6 py-6 rounded-xl flex flex-col md:flex-row items-start md:items-center gap-4"
         >
-          <div className="bg-[#0f2221] w-12 h-12 rounded-full flex items-center justify-center">
-            <img src="/icon-user.svg" alt="user" className="w-5 h-5" />
+          <div className="bg-[#0f2221] opacity-60 rounded-full flex items-center justify-center">
+            <img src={myPic} alt="user" className="w-full" />
           </div>
           <div className="space-y-1">
-            <h3 className="text-[16px] text-white font-semibold leading-tight">Md. Shahariar Hafiz</h3>
-            <p className="text-[14px] text-[#00f7ff] font-medium leading-tight">
+            <h3 className="text-xl text-white font-semibold leading-tight">Md. Shahariar Hafiz</h3>
+            <p className="text-sm text-primary font-medium leading-tight">
               MERN Stack Learner & Frontend Developer
             </p>
-            <p className="text-gray-400 text-[13px] leading-relaxed">
-              I am a self-taught frontend developer passionate about building modern UI experiences. I've completed over 12 personal and guided projects focusing on responsiveness and design quality.
+            <p className="text-gray-400 text-base leading-relaxed">
+              <span className='text-primary text-xl'>❝ </span>
+              I am a self-taught frontend developer passionate about building modern UI experiences. I've completed over 15+ personal and guided projects focusing on responsiveness and design quality.
+              <span className='text-primary text-xl'>❞ </span>
             </p>
           </div>
         </motion.div>
@@ -50,41 +53,60 @@ export default function AboutMe() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
-          className="bg-[#111111] p-6 rounded-xl grid grid-cols-1 md:grid-cols-2 gap-8"
+          className="bg-[#111111] p-6 rounded-xl"
         >
-          <div className="space-y-5">
-            <div className="flex items-start gap-3">
-              <FaBirthdayCake className={iconStyle} />
-              <div>
-                <p className={labelStyle}>Date of Birth</p>
-                <p className={valueStyle}>January 15, 2000</p>
+            <div className='flex items-center mb-4 gap-2'>
+                <div className="w-14 flex items-center justify-center bg-[#0f2221] p-3 rounded-xl">
+                  <FaIdCard className='text-white' size={25} />
+                </div>
+                <h2 className='text-white text-xl font-bold'>Personal Information</h2>
+            </div>       
+
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+            <div className="space-y-5">
+              <div className="flex items-start gap-3">
+              <div className="bg-[#0f2221] p-3 rounded-xl">
+                <FaCalendarAlt size={18} className='text-primary' />
+              </div>
+                <div>
+                  <p className={labelStyle}>Date of Birth</p>
+                  <p className={valueStyle}>January 01, 2005</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+              <div className="bg-[#0f2221] p-3 rounded-xl">
+                <IoMdMail className='text-primary' size={18} />
+              </div>
+                <div>
+                  <p className={labelStyle}>Email Address</p>
+                  <p className={valueStyle}>shahariar.works@gmail.com</p>
+                </div>
               </div>
             </div>
-            <div className="flex items-start gap-3">
-              <FaEnvelope className={iconStyle} />
-              <div>
-                <p className={labelStyle}>Email Address</p>
-                <p className={valueStyle}>shahariar.dev@gmail.com</p>
+
+            <div className="space-y-5">
+              <div className="flex items-start gap-3">
+              <div className="bg-[#0f2221] p-3 rounded-xl">
+                <FaPhone size={18} className='text-primary' />
+              </div>
+                <div>
+                  <p className={labelStyle}>Phone Number</p>
+                  <p className={valueStyle}>+880 1748630374</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+              <div className="bg-[#0f2221] p-3 rounded-xl">
+                <MdLocationPin size={18} className='text-primary' />
+              </div>                
+                <div>
+                  <p className={labelStyle}>Location</p>
+                  <p className={valueStyle}>Barishal, Bangladesh</p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="space-y-5">
-            <div className="flex items-start gap-3">
-              <FaPhoneAlt className={iconStyle} />
-              <div>
-                <p className={labelStyle}>Phone Number</p>
-                <p className={valueStyle}>+880 1700 000000</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-3">
-              <FaMapMarkerAlt className={iconStyle} />
-              <div>
-                <p className={labelStyle}>Location</p>
-                <p className={valueStyle}>Dhaka, Bangladesh</p>
-              </div>
-            </div>
-          </div>
+
         </motion.div>
 
         {/* Highlights Cards */}
@@ -97,11 +119,11 @@ export default function AboutMe() {
             className={cardStyle}
           >
             <div className="bg-[#0f2221] p-3 rounded-full">
-              <RiCodeSSlashLine className={iconStyle} />
+              <RiCodeSSlashLine className="text-primary" size={20} />
             </div>
             <div>
-              <h5 className="text-white text-[15px] font-semibold">Frontend Development</h5>
-              <p className="text-gray-400 text-[13px] leading-relaxed">Responsive UIs with React, Tailwind & JS.</p>
+              <h5 className="text-white text-lg font-semibold">Frontend Development</h5>
+              <p className="text-gray-400 text-base leading-relaxed">Building responsive and performant web applications using React and best practices.</p>
             </div>
           </motion.div>
 
@@ -113,11 +135,11 @@ export default function AboutMe() {
             className={cardStyle}
           >
             <div className="bg-[#0f2221] p-3 rounded-full">
-              <MdOutlineDesignServices className={iconStyle} />
+              <MdOutlineDesignServices className="text-primary" size={20} />
             </div>
             <div>
-              <h5 className="text-white text-[15px] font-semibold">UI/UX Implementation</h5>
-              <p className="text-gray-400 text-[13px] leading-relaxed">Clean & consistent user experiences.</p>
+              <h5 className="text-white text-lg font-semibold">UI/UX Implementation</h5>
+              <p className="text-gray-400 text-base leading-relaxed">Converting design concepts into pixel-perfect, interactive interfaces with attention to accessibility.</p>
             </div>
           </motion.div>
 
@@ -129,11 +151,11 @@ export default function AboutMe() {
             className={cardStyle}
           >
             <div className="bg-[#0f2221] p-3 rounded-full">
-              <TbProgress className={iconStyle} />
+              <TbProgress className="text-primary" size={20} />
             </div>
             <div>
-              <h5 className="text-white text-[15px] font-semibold">12+ Projects Completed</h5>
-              <p className="text-gray-400 text-[13px] leading-relaxed">Built projects across multiple stacks.</p>
+              <h5 className="text-white text-lg font-semibold">End-to-End Process</h5>
+              <p className="text-gray-400 text-base leading-relaxed">Managing complete design lifecycle with attention to detail.</p>
             </div>
           </motion.div>
 
@@ -145,11 +167,11 @@ export default function AboutMe() {
             className={cardStyle}
           >
             <div className="bg-[#0f2221] p-3 rounded-full">
-              <HiLightBulb className={iconStyle} />
+              <HiLightBulb className="text-primary" size={20} />
             </div>
             <div>
-              <h5 className="text-white text-[15px] font-semibold">Always Evolving</h5>
-              <p className="text-gray-400 text-[13px] leading-relaxed">Learning modern tools & best practices.</p>
+              <h5 className="text-white text-lg font-semibold">Always Evolving</h5>
+              <p className="text-gray-400 text-base leading-relaxed">Learning modern tools & best practices.</p>
             </div>
           </motion.div>
         </div>
