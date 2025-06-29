@@ -1,11 +1,13 @@
-import { FaArrowRight, FaDownload, FaLinkedinIn, FaDribbble, FaBehance, FaGithub, FaCode, FaPaintBrush, FaMobileAlt } from 'react-icons/fa';
+import { FaArrowRight, FaDownload, FaLinkedinIn, FaDribbble, FaBehance, FaGithub, FaCode, FaPaintBrush, FaMobileAlt, FaAngleDown } from 'react-icons/fa';
 import person from '../../assets/person-img.png';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
+
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-between px-0 py-16 bg-black text-white overflow-hidden relative">
+    <section id='home' className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-between px-0 bg-black text-white overflow-hidden relative">
       <div className="max-w-[1320px] w-full mx-auto flex flex-col-reverse md:flex-row items-center justify-between z-10">
         {/* Left Content */}
         <motion.div
@@ -117,11 +119,24 @@ export default function Hero() {
         </motion.div>
       </div>
 
+
       {/* Scroll Indicator */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
-        <div className="w-[22px] h-[36px] rounded-full border-2 border-gray-600 flex items-start justify-center p-[3px]">
-          <div className="w-[4px] h-[4px] rounded-full bg-gray-400 animate-bounce"></div>
-        </div>
+      <div className="absolute bottom-28 left-1/2 transform -translate-x-1/2">
+        <Link
+          to="about"
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={-100}
+          className="cursor-pointer"
+        >
+          <motion.div
+          animate={{ y: [0, 10, 0] }}
+            transition={{ repeat: Infinity, duration: 1.5 }}
+          className="w-[22px] h-[36px] rounded-full border-2 border-gray-600 flex items-start justify-center p-[3px]">
+            <div className="w-[4px] h-[4px] rounded-full bg-gray-400 animate-bounce"></div>
+          </motion.div>
+        </Link>
       </div>
     </section>
   );
