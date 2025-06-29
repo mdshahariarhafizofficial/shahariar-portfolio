@@ -13,7 +13,7 @@ const cardStyle = 'bg-[#111111] rounded-xl flex gap-4 items-start p-5 md:p-6';
 
 export default function AboutMe() {
   return (
-    <section id="about" className="w-full bg-[#000] pt-[80px] pb-16 px-4 md:px-0">
+    <section id="about" className="w-full bg-[#000] pt-[40px] pb-20 px-4 md:px-0">
       <div className="max-w-[1320px] mx-auto flex flex-col gap-8">
         {/* Section Header */}
         <div className="text-center space-y-2">
