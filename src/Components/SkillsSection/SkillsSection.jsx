@@ -1,4 +1,3 @@
-import { Check, Globe, LayoutGrid, Code } from "lucide-react";
 import { FaNodeJs, FaReact, FaServer, FaTools } from "react-icons/fa";
 import { SiExpress, SiMongodb } from "react-icons/si";
 import { motion } from "framer-motion";
