@@ -83,13 +83,15 @@ export default function Hero() {
               <FaLinkedinIn className="w-5 h-5" />
             </div>
             <div className="w-10 h-10 bg-[#0f2221] rounded-full flex items-center justify-center hover:text-teal-400 cursor-pointer transition">
+              <a target='_blank' href='https://github.com/mdshahariarhafizofficial'>
+                <FaGithub className="w-5 h-5" />
+              </a>
+            </div>
+            <div className="w-10 h-10 bg-[#0f2221] rounded-full flex items-center justify-center hover:text-teal-400 cursor-pointer transition">
               <FaDribbble className="w-5 h-5" />
             </div>
             <div className="w-10 h-10 bg-[#0f2221] rounded-full flex items-center justify-center hover:text-teal-400 cursor-pointer transition">
               <FaBehance className="w-5 h-5" />
-            </div>
-            <div className="w-10 h-10 bg-[#0f2221] rounded-full flex items-center justify-center hover:text-teal-400 cursor-pointer transition">
-              <FaGithub className="w-5 h-5" />
             </div>
           </div>
         </motion.div>
