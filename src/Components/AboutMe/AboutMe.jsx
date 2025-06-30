@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
 import { FaBirthdayCake, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaIdCard, FaCalendarAlt, FaPhone } from 'react-icons/fa';
 import { RiCodeSSlashLine } from 'react-icons/ri';
-import { MdLocationPin, MdOutlineDesignServices } from 'react-icons/md';
+import { MdLanguage, MdLocationPin, MdOutlineDesignServices } from 'react-icons/md';
 import { TbProgress } from 'react-icons/tb';
 import { HiLightBulb } from 'react-icons/hi';
 import myPic from '../../assets/mypic.png'
 import { IoIosMailOpen, IoMdMail } from 'react-icons/io';
+import { HiAcademicCap } from 'react-icons/hi2';
 const iconStyle = 'text-[#00f7ff] text-lg';
 const labelStyle = 'text-[14px] text-gray-400';
 const valueStyle = 'text-[14px] text-white';
@@ -82,6 +83,16 @@ export default function AboutMe() {
                   <p className={valueStyle}>shahariar.works@gmail.com</p>
                 </div>
               </div>
+              <div className="flex items-start gap-3">
+              <div className="bg-[#0f2221] p-3 rounded-xl">
+                <HiAcademicCap className='text-primary' size={18} />
+              </div>
+                <div>
+                  <p className={labelStyle}>EDUCATION</p>
+                  <h2 className="text-primary">Diploma in Computer Science Engineering (2021-Present)</h2>
+                  <p className={labelStyle}>Barisal gov't  Polytechnic Institute, Barishal, Bangladesh</p>
+                </div>
+              </div>
             </div>
 
             <div className="space-y-5">
@@ -101,6 +112,15 @@ export default function AboutMe() {
                 <div>
                   <p className={labelStyle}>Location</p>
                   <p className={valueStyle}>Barishal, Bangladesh</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+              <div className="bg-[#0f2221] p-3 rounded-xl">
+                <MdLanguage size={18} className='text-primary' />
+              </div>                
+                <div>
+                  <p className={labelStyle}>Language</p>
+                  <p className={valueStyle}>English, Bangla, Hindi, Urdu</p>
                 </div>
               </div>
             </div>
