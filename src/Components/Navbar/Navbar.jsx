@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { FaDownload } from 'react-icons/fa';
+import { FaDownload, FaMoon } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import logo from '../../assets/ShahariarHafiz.png';
 import { MdWbSunny } from 'react-icons/md';
 
 const Navbar = () => {
-  const navLinks = ['home', 'about', 'skills', 'education', 'portfolio', 'contact'];
+  const [darkMode, setDarkMode] = useState(true);
+  const navLinks = ['home', 'about', 'skills', 'portfolio', 'contact'];
   const [active, setActive] = useState('home'); // default active section
 
   const handleSetActive = (to) => {
@@ -13,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="max-w-[1320px] mx-auto navbar px-0 shadow-sm bg-[#000000d2] py-5">
+    <div className="max-w-[1320px] mx-auto navbar justify-between px-0 shadow-sm bg-[#000000d2] py-5">
       {/* Left Logo + Mobile Menu */}
       <div className="navbar-start">
         <div className="dropdown">
@@ -79,21 +80,31 @@ const Navbar = () => {
             </Link>
           ))}
           <div>
-            <button>
-              <MdWbSunny size={25} color="#2dd4bf" />
+            <button onClick={() => setDarkMode(!darkMode)}>
+              {
+                darkMode? 
+                  <MdWbSunny size={25} color="#2dd4bf" />
+                  :
+                  <FaMoon size={25} color="#2dd4bf" />
+              }
             </button>
           </div>
         </ul>
       </div>
 
-      {/* Optional Right Resume Button */}
-      {/* <div className="navbar-end">
-        <button type="button"
-          className="text-white bg-gradient-to-r from-primary via-teal-600 to-teal-400 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-lg text-lg px-8 py-2.5 text-center me-2 mb-2 flex items-center gap-2">
-          <FaDownload size={22} />
-          Resume
-        </button>
-      </div> */}
+
+      <div className="navbar-end flex md:hidden">
+            <div>
+            <button onClick={() => setDarkMode(!darkMode)}>
+              {
+                darkMode? 
+                  <MdWbSunny size={25} color="#2dd4bf" />
+                  :
+                  <FaMoon size={25} color="#2dd4bf" />
+              }
+            </button>
+          </div>
+      </div>
     </div>
   );
 };
