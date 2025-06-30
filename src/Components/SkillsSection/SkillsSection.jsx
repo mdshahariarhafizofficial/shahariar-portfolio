@@ -8,7 +8,7 @@ export default function SkillsSection() {
     <section id="skills" className="bg-black text-white px-6 py-20 relative overflow-hidden">
       <div className="max-w-[1320px] mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
-          Skills & Abilities
+          Skills & <span className="text-primary">Abilities</span>
         </h2>
         <p className="text-center text-gray-400 mb-16 text-lg">
           My expertise and capabilities

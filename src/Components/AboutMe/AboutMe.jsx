@@ -18,7 +18,7 @@ export default function AboutMe() {
         {/* Section Header */}
         <div className="text-center space-y-2">
           <h2 className="text-white text-[32px] md:text-[42px] font-bold leading-[1.2] tracking-tight">
-            About Me
+            About <span className="text-primary">Me</span>
           </h2>
           <p className="text-[15px] text-gray-400 font-normal">Discover my journey and expertise</p>
         </div>
