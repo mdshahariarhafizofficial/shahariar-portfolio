@@ -12,7 +12,9 @@
   --color-primary: var(--color-teal-400);
   --color-secondary: #9ca3af;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 *{
     font-family: "Inter", sans-serif;
 }

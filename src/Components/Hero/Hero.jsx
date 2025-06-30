@@ -63,11 +63,18 @@ export default function Hero() {
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 justify-center md:justify-start mt-6">
-            <button type="button" className="text-white bg-gradient-to-r from-primary via-teal-600 to-teal-400 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-lg text-lg px-8 py-3 text-center me-2 flex items-center gap-2"> 
-            Hire me <FaArrowRight /></button>            
-            <button className="flex items-center gap-2 px-6 py-2 border border-teal-500 text-teal-400 rounded-md font-medium hover:bg-[#0f2221] hover:shadow-md hover:scale-105 transition-all">
-              Download CV <FaDownload />
-            </button>
+            <a href="#contact">
+              <button type="button" className="text-white bg-gradient-to-r from-primary via-teal-600 to-teal-400 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-lg text-lg px-8 py-3 text-center me-2 flex items-center gap-2"> 
+              Hire me <FaArrowRight /></button>            
+            </a>
+
+            <a href="/public/Cv/Md_Shahariar_Hafiz_CV.pdf" download
+            >
+              <button className="flex items-center gap-2 px-6 py-3 border border-teal-500 text-teal-400 rounded-md font-medium hover:bg-[#0f2221] hover:shadow-md hover:scale-105 transition-all">
+                Download CV <FaDownload />
+              </button>
+            </a>
+
           </div>
 
           {/* Social Icons */}
