@@ -1,4 +1,4 @@
-import { FaArrowRight, FaDownload, FaLinkedinIn, FaDribbble, FaBehance, FaGithub, FaCode, FaPaintBrush, FaMobileAlt, FaAngleDown } from 'react-icons/fa';
+import { FaArrowRight, FaDownload, FaLinkedinIn, FaDribbble, FaBehance, FaGithub, FaCode, FaPaintBrush, FaMobileAlt, FaAngleDown, FaDiscord, FaWhatsapp } from 'react-icons/fa';
 import person from '../../assets/person-img.png';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
@@ -88,10 +88,14 @@ export default function Hero() {
               </a>
             </div>
             <div className="w-10 h-10 bg-[#0f2221] rounded-full flex items-center justify-center hover:text-teal-400 cursor-pointer transition">
-              <FaDribbble className="w-5 h-5" />
+              <a href="https://discord.com/users/1111635073326923816" target="_blank">
+                <FaDiscord className="w-5 h-5" />
+              </a>
             </div>
             <div className="w-10 h-10 bg-[#0f2221] rounded-full flex items-center justify-center hover:text-teal-400 cursor-pointer transition">
-              <FaBehance className="w-5 h-5" />
+              <a href="https://wa.me/8801748630374" target="_blank">
+                <FaWhatsapp className="w-5 h-5" />
+              </a>
             </div>
           </div>
         </motion.div>

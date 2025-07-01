@@ -8,10 +8,8 @@ import ContactSection from '../../Components/ContactSection/ContactSection';
 const Home = () => {
     return (
       <>
-        <div className='max-w-[1320px] mx-auto'>
-          <Hero></Hero>
-          <AboutMe></AboutMe>
-        </div>
+        <Hero></Hero>
+        <AboutMe></AboutMe>
         <SkillsSection></SkillsSection>
         <FeaturedProjects></FeaturedProjects>
         <ContactSection></ContactSection>
