@@ -136,7 +136,7 @@ export default function Hero() {
           spy={true}
           smooth={true}
           duration={500}
-          offset={-100}
+          offset={-40}
           className="cursor-pointer"
         >
           <motion.div

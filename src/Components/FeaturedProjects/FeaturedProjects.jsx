@@ -176,7 +176,7 @@ export default function FeaturedProjects() {
               <ScrollableImage src={project.img} alt={project.title} />
 
               <div className="flex-1 w-full">
-                <h3 className="text-2xl font-black text-white mb-2">
+                <h3 className="text-4xl font-black text-primary mb-2">
                   {String(project.id).padStart(2, "0")}
                 </h3>
                 <h4 className="text-xl font-semibold mb-2">{project.title}</h4>
