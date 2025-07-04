@@ -80,7 +80,9 @@ export default function Hero() {
           {/* Social Icons */}
           <div className="flex justify-center md:justify-start gap-4 mt-8">
             <div className="w-10 h-10 bg-[#0f2221] rounded-full flex items-center justify-center hover:text-teal-400 cursor-pointer transition">
-              <FaLinkedinIn className="w-5 h-5" />
+              <a target='_blank' href='https://www.linkedin.com/in/devshahariarhafiz'>
+                <FaLinkedinIn className="w-5 h-5" />
+              </a>
             </div>
             <div className="w-10 h-10 bg-[#0f2221] rounded-full flex items-center justify-center hover:text-teal-400 cursor-pointer transition">
               <a target='_blank' href='https://github.com/mdshahariarhafizofficial'>
