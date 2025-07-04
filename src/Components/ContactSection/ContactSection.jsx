@@ -46,7 +46,7 @@ export default function ContactSection() {
 
             <div className="flex gap-4 mt-4">
               <a href="https://github.com/mdshahariarhafizofficial" target="_blank" className="text-white hover:text-primary"><FaGithub size={28} /></a>
-              <a href="https://linkedin.com" target="_blank" className="text-white hover:text-primary"><FaLinkedinIn size={28} /></a>
+              <a href="https://www.linkedin.com/in/devshahariarhafiz" target="_blank" className="text-white hover:text-primary"><FaLinkedinIn size={28} /></a>
               <a href="https://wa.me/+8801748630374" target="_blank" className="text-white hover:text-primary"><FaWhatsapp size={28} /></a>
             </div>
 
