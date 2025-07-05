@@ -68,10 +68,10 @@ export default function Hero() {
               Hire me <FaArrowRight /></button>            
             </a>
 
-            <a href="/public/Cv/Md_Shahariar_Hafiz_CV.pdf" download
+            <a href="https://drive.google.com/file/d/1ldhAMNI_bPlJohO2gZYNiMCpsqyQ_tGF/view?usp=sharing" target='_blank' download
             >
               <button className="flex items-center gap-2 px-6 py-3 border border-teal-500 text-teal-400 rounded-md font-medium hover:bg-[#0f2221] hover:shadow-md hover:scale-105 transition-all">
-                Download CV <FaDownload />
+                Download Resume <FaDownload />
               </button>
             </a>
 
